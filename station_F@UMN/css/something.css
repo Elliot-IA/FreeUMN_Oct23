@@ -1,0 +1,64 @@
+.myHeader {
+    color:black;
+    display:inline-block;
+    height: 0vh;
+}
+
+.headerImage {
+    width: 95vh;
+}
+
+.loadingImages{
+    display:inline-block;
+    width: 10vh;
+    transform: translate(-2px, 21px);
+}
+
+#myImage{
+    border-radius: 10vh;
+    margin: 8vh;
+    display: inline-block;
+}
+
+body{
+    text-align: center;
+    font-size: 12px;
+}
+#liveLoadingData{
+    width: 100%;
+    text-align: left;
+}
+
+#partData{
+    text-align: right;
+    display: inline-block;
+    margin: 0px;
+    top: 50%;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    padding-bottom: 54px;
+    max-width: 30vw;
+    
+ 
+}
+
+#PartAdded{
+    font-size: 30px;
+    padding-top: 10vh;
+    position: absolute;
+    top: 0px;
+    background-color: #ffffff75;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+}
+#LoadingImage{
+    top: 10vh;
+    height: 70vh;
+    
+}
+#partAddedText{
+    font-size: 14vh;
+}
+

@@ -1,0 +1,49 @@
+body{background: black}
+#rainbowWheel{
+    width: 280vw;
+    height: 260vw;
+    animation: spin 50s linear infinite;
+    left: -18%;
+    position: fixed;
+    bottom: -180%;
+    filter: blur(18px);
+}
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+#leftBlackBlocker{height: 100%;width: 60px;left: 0px;top: 0px;}#rightBlackBlocker{right: 0px;height: 100%;width: 50%;top: 0px;}#topBlackBlocker{top: 0px;right: 0px;width: 100%;height: 10%;}#bottomBlackBlocker{bottom: 0px;left: 0px;/* height: 50px; */width: 100%;}.blackBlocker{background: black;position: fixed;}
+
+:root {
+    --offsetBottom: 14px;
+    --offsetRight: 17px;
+    --tileSize: 278px;
+  }
+  #imageTile1,#imageTile1_old { bottom: calc(var(--offsetBottom) + (2 * var(--tileSize))); right: calc(var(--offsetRight)); }
+  #imageTile2,#imageTile2_old { bottom: calc(var(--offsetBottom) + var(--tileSize)); right: calc(var(--offsetRight)); }
+  #imageTile3,#imageTile3_old { bottom: calc(var(--offsetBottom) + var(--tileSize)); right: calc(var(--offsetRight) + var(--tileSize)); }
+  #imageTile4,#imageTile4_old { bottom: calc(var(--offsetBottom)); right: calc(var(--offsetRight) + var(--tileSize)); }
+  #imageTile5,#imageTile5_old { bottom: calc(var(--offsetBottom)); right: calc(var(--offsetRight) + (2 * var(--tileSize))); }
+  #imageTile6,#imageTile6_old { bottom: calc(var(--offsetBottom) + var(--tileSize)); right: calc(var(--offsetRight) + (2 * var(--tileSize))); }
+  #imageTile7,#imageTile7_old { bottom: calc(var(--offsetBottom) + (2 * var(--tileSize))); right: calc(var(--offsetRight) + var(--tileSize)); }
+  .imageTile { background: white; width: var(--tileSize); height: var(--tileSize); position: fixed; transform: rotate(-90deg); }
+  .tileImg { width: 100%; height: 100% }
+#img1{}
+#img2{}
+#img3{}
+#img4{}
+#img5{}
+#img6{}
+#img7{}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;    
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fadeIn{
+    animation: fadeIn 0.5s 0s forwards;
+}
